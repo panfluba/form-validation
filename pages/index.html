@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form__body">
+                <h1 class="form__title">Form</h1>
+                <div class="form__item">
+                    <label for="formName" class="form__label">First name<attr style="color: rgb(165, 50, 50);" title="Mandatory field">*</attr>: </label>
+                    <input type="formMame" type="text" name="name" class="form__input">
+                </div>
+                <div class="form__item">
+                    <label for="formName" class="form__label">E-mail<attr style="color: rgb(165, 50, 50);" title="Mandatory field">*</attr>:</label>
+                    <input type="formMame" type="text" name="name" class="form__input">
+                </div>
+                <div class="form__item">
+                    <label for="formName" class="form__label">GitHub<attr style="color: rgb(165, 50, 50);" title="Mandatory field">*</attr>:</label>
+                    <input type="formMame" type="text" name="name" class="form__input">
+                </div>
+
+                <div class="form__item">
+                    <div class="form__label">Are you student?</div>
+                    <div class="options">
+                        <div class="option__item">
+                            <input type="formStudent" type="radio" value="yes" name="student" class="option__input" checked>
+                            <label for="formStudent" class="option__label">Yes</label>
+                        </div>
+                        <div class="option__item">
+                            <input type="formStudent" type="radio" value="no" name="student" class="option__input">
+                            <label for="formStudent" class="option__label">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__item">
+                    <div class="form__label">What is your work experience?</div>
+                    <select name="age" class="select">
+                        <option value="no experience" selected>No experience</option>
+                        <option value="less than 1 year">Less than 1 year</option>
+                        <option value="from 1 to 3 years">From 1 to 3 years</option>
+                        <option value="from 3 to 5 years">From 3 to 5 years</option>
+                        <option value="more than 5 years">More than 5 years</option>
+                    </select>
+                </div>
+
+                <div class="form__item">
+                    <div class="form__label">Attach your resume<attr style="color: rgb(165, 50, 50);" title="Mandatory field">*</attr>: </div>
+                    <div class="file">
+                        <div class="file__item">
+                            <input id="formCV" accept=".jpg, .png, .doc, .docx, .pdf" type="file" name="CV" class="file__input">
+                            <div class="file__button">Choose file</div>
+                        </div>
+                        <div class="form__preview"></div>
+                    </div>
+                </div>
+
+                <div class="form__item">
+                    <label for="forMessage" class="form__label">Addition information:</label>
+                    <textarea name="message" id="formMessage"class="form__input" placeholder="Type here addition information..."> </textarea>
+                </div>
+
+                <div class="form__item">
+                    <div class="checkbox">
+                        <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input">
+                        <label for="formAgreement" class="checkbox__label">I agree with the processing of my personal data</label>
+                    </div>
+                </div>
+                <button class="form__button">Send the form</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.html"></script>
+</body>
+</html>
